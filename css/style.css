@@ -1,0 +1,117 @@
+:root {
+    --OverLay-Color: rgba(214, 46, 51, 0.6);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Rubik', sans-serif; */
+}
+
+.home {
+    height: 100vh;
+    background-image: url(../images/City-Dance-Party3.-Photo-617images.com_-e1466609609113.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--OverLay-Color);
+}
+
+#sideBar {
+    position: fixed;
+    display: flex;
+    color: white;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 250px;
+}
+
+#sideBar span {
+    align-self: center;
+    cursor: pointer;
+}
+
+#sideBar ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 0;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+#sideBar ul a:hover {
+    color: var(--OverLay-Color);
+
+}
+
+#openSideBar{
+    background-color: var(--OverLay-Color);
+}
+
+.closeSideBar {
+    font-size: 30px;
+    padding: 20px;
+    position: relative;
+    left: 125px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------- */
+.sliderDown h4 {
+    background-color: var(--OverLay-Color);
+    cursor: pointer;
+}
+
+.sliderDown div {
+    background-color: #ccc;
+    display: none;
+}
+
+/* -------------------------------------------------- */
+
+#details {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    background-image: url(../images/360_F_183861575_5pA4PESbRU1QcskrgKsgUcnSYHrkvSTq.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: bottom ;
+}
+.item{
+  
+    height: 150px;
+    border: 1px solid white;
+}
+
+/* --------------------------------------------------- */
+
+.myLinks i{
+    /* color: var(--OverLay-Color); */
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.myLinks i:hover{
+    background-color: var(--OverLay-Color);
+    color: #fff;
+    border: 1px solid var(--OverLay-Color);
+}
